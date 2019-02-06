@@ -12,7 +12,7 @@
     <div class="top">
         <h1>Trivia Night</h1>
         <div class="bar">
-            <a class="btn" id="btn">Start Over</a>
+            <a class="btn" id="restart">Start Over</a>
             <div class="score">
                 <h3>Score:</h3>   
                 <h3 id="score-count">0</h3>
@@ -322,6 +322,9 @@
         $(document).ready(function(){
             var score = 0;
             var isQuestionOpen = false;
+            $("#restart").click(function(f){
+                location.reload();
+            })
             $.get("https://opentdb.com/api.php?amount=3&category=10&type=multiple", displayQuestions1)
             function displayQuestions1(booksData){
                 $("#books-points-1").click(function(){

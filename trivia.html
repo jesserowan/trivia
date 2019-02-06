@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Trivia</title>
+</head>
+<body>
+    <div class="top">
+        <h1>Trivia Night</h1>
+        <div class="bar">
+            <a class="btn" id="btn">Start Over</a>
+            <div class="score">
+                <h3>Score:</h3>   
+                <h3 id="score-count">0</h3>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="header">
+                <h3>Books</h3>
+            </div>
+            <div class="box" id="books-box-1">
+                <div class="form" id="books-form-1">
+                    <form>
+                        <label>
+                            <h4 id="bks-q-1"></h4>
+                        </label>
+                        <input type="radio" name="bks-a-1" value="bks-1-0">
+                            <p class="a" id="bks-1-0">Answer 1</p>
+                        <br>
+                        <input type="radio" name="bks-a-1" value="bks-1-1">
+                            <p class="a" id="bks-1-1">Answer 2</p>
+                        <br>
+                        <input type="radio" name="bks-a-1" value="bks-1-2">
+                            <p class="a" id="bks-1-2">Answer 3</p>
+                        <br>
+                        <input type="radio" name="bks-a-1" value="bks-1-3">
+                            <p class="a" id="bks-1-3">Answer 4</p>
+                        <br>
+                        <input type="submit" class="btn submit" href="" id="bks-1-submit">
+                    </form>
+                </div>
+                <div class="points" id="books-points-1">
+                    <h4>100</h4>
+                </div>
+                <div class="right" id="books-1-right">
+                    <h4>Correct! You earned 100 points</h4>
+                </div>
+                <div class="wrong" id="books-1-wrong">
+                    <h4>Wrong! You lose 100 points</h4>
+                </div>
+            </div>
+            <div class="box" id="books-box-2">
+                <div class="form" id="books-form-2">
+                    <form>
+                        <label>
+                            <h4 id="bks-q-2"></h4>
+                        </label>
+                        <input type="radio" name="bks-a-2" value="bks-2-0">
+                            <p class="a" id="bks-2-0">Answer 1</p>
+                        <br>
+                        <input type="radio" name="bks-a-2" value="bks-2-1">
+                            <p class="a" id="bks-2-1">Answer 2</p>
+                        <br>
+                        <input type="radio" name="bks-a-2" value="bks-2-2">
+                            <p class="a" id="bks-2-2">Answer 3</p>
+                        <br>
+                        <input type="radio" name="bks-a-2" value="bks-2-3">
+                            <p class="a" id="bks-2-3">Answer 4</p>
+                        <br>
+                        <input type="submit" class="btn submit" href="" id="bks-2-submit">
+                    </form>
+                </div>
+                <div class="points" id="books-points-2">
+                    <h4>200</h4>
+                </div>
+                <div class="right" id="books-2-right">
+                    <h4>Correct! You earned 200 points</h4>
+                </div>
+                <div class="wrong" id="books-2-wrong">
+                    <h4>Wrong! You lose 200 points</h4>
+                </div>
+            </div>
+            <div class="box" id="books-box-3">
+                <div class="form" id="books-form-3">
+                    <form>
+                        <label>
+                            <h4 id="bks-q-3"></h4>
+                        </label>
+                        <input type="radio" name="bks-a-3" value="bks-3-0">
+                            <p class="a" id="bks-3-0">Answer 1</p>
+                        <br>
+                        <input type="radio" name="bks-a-3" value="bks-3-1">
+                            <p class="a" id="bks-3-1">Answer 2</p>
+                        <br>
+                        <input type="radio" name="bks-a-3" value="bks-3-2">
+                            <p class="a" id="bks-3-2">Answer 3</p>
+                        <br>
+                        <input type="radio" name="bks-a-3" value="bks-3-3">
+                            <p class="a" id="bks-3-3">Answer 4</p>
+                        <br>
+                        <input type="submit" class="btn submit" href="" id="bks-3-submit">
+                    </form>
+                </div>
+                <div class="points" id="books-points-3">
+                    <h4>300</h4>
+                </div>
+                <div class="right" id="books-3-right">
+                    <h4>Correct! You earned 300 points</h4>
+                </div>
+                <div class="wrong" id="books-3-wrong">
+                    <h4>Wrong! You lose 300 points</h4>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <h3>Music</h3>
+            </div>
+            <div class="box" id="music-box-1">
+                <div class="form" id="music-form-1">
+                    <form>
+                        <label>
+                            <h4 id="mus-q-1"></h4>
+                        </label>
+                        <input type="radio" name="mus-a-1" value="mus-1-0">
+                            <p class="a" id="mus-1-0">Answer 1</p>
+                        <br>
+                        <input type="radio" name="mus-a-1" value="mus-1-1">
+                            <p class="a" id="mus-1-1">Answer 2</p>
+                        <br>
+                        <input type="radio" name="mus-a-1" value="mus-1-2">
+                            <p class="a" id="mus-1-2">Answer 3</p>
+                        <br>
+                        <input type="radio" name="mus-a-1" value="mus-1-3">
+                            <p class="a" id="mus-1-3">Answer 4</p>
+                        <br>
+                        <input type="submit" class="btn submit" href="" id="mus-1-submit">
+                    </form>
+                </div>
+                <div class="points" id="music-points-1">
+                    <h4>100</h4>
+                </div>
+                <div class="right" id="music-1-right">
+                    <h4>Correct! You earned 100 points</h4>
+                </div>
+                <div class="wrong" id="music-1-wrong">
+                    <h4>Wrong! You lose 100 points</h4>
+                </div>
+            </div>
+            <div class="box" id="music-box-2">
+                <div class="form" id="music-form-2">
+                    <form>
+                        <label>
+                            <h4 id="mus-q-2"></h4>
+                        </label>
+                        <input type="radio" name="mus-a-2" value="mus-2-0">
+                            <p class="a" id="mus-2-0">Answer 1</p>
+                        <br>
+                        <input type="radio" name="mus-a-2" value="mus-2-1">
+                            <p class="a" id="mus-2-1">Answer 2</p>
+                        <br>
+                        <input type="radio" name="mus-a-2" value="mus-2-2">
+                            <p class="a" id="mus-2-2">Answer 3</p>
+                        <br>
+                        <input type="radio" name="mus-a-2" value="mus-2-3">
+                            <p class="a" id="mus-2-3">Answer 4</p>
+                        <br>
+                        <input type="submit" class="btn submit" href="" id="mus-2-submit">
+                    </form>
+                </div>
+                <div class="points" id="music-points-2">
+                    <h4>200</h4>
+                </div>
+                <div class="right" id="music-2-right">
+                    <h4>Correct! You earned 200 points</h4>
+                </div>
+                <div class="wrong" id="music-2-wrong">
+                    <h4>Wrong! You lose 200 points</h4>
+                </div>
+            </div>
+            <div class="box" id="music-box-3">
+                <div class="form" id="music-form-3">
+                    <form>
+                        <label>
+                            <h4 id="mus-q-3"></h4>
+                        </label>
+                        <input type="radio" name="mus-a-3" value="mus-3-0">
+                            <p class="a" id="mus-3-0">Answer 1</p>
+                        <br>
+                        <input type="radio" name="mus-a-3" value="mus-3-1">
+                            <p class="a" id="mus-3-1">Answer 2</p>
+                        <br>
+                        <input type="radio" name="mus-a-3" value="mus-3-2">
+                            <p class="a" id="mus-3-2">Answer 3</p>
+                        <br>
+                        <input type="radio" name="mus-a-3" value="mus-3-3">
+                            <p class="a" id="mus-3-3">Answer 4</p>
+                        <br>
+                        <input type="submit" class="btn submit" href="" id="mus-3-submit">
+                    </form>
+                </div>
+                <div class="points" id="music-points-3">
+                    <h4>300</h4>
+                </div>
+                <div class="right" id="music-3-right">
+                    <h4>Correct! You earned 300 points</h4>
+                </div>
+                <div class="wrong" id="music-3-wrong">
+                    <h4>Wrong! You lose 300 points</h4>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <h3>Science & Nature</h3>
+            </div>
+            <div class="box" id="science-box-1">
+                <div class="form" id="science-form-1">
+                    <form>
+                        <label>
+                            <h4 id="sci-q-1"></h4>
+                        </label>
+                        <input type="radio" name="sci-a-1" value="sci-1-0">
+                            <p class="a" id="sci-1-0">Answer 1</p>
+                        <br>
+                        <input type="radio" name="sci-a-1" value="sci-1-1">
+                            <p class="a" id="sci-1-1">Answer 2</p>
+                        <br>
+                        <input type="radio" name="sci-a-1" value="sci-1-2">
+                            <p class="a" id="sci-1-2">Answer 3</p>
+                        <br>
+                        <input type="radio" name="sci-a-1" value="sci-1-3">
+                            <p class="a" id="sci-1-3">Answer 4</p>
+                        <br>
+                        <input type="submit" class="btn submit" href="" id="sci-1-submit">
+                    </form>
+                </div>
+                <div class="points" id="science-points-1">
+                    <h4>100</h4>
+                </div>
+                <div class="right" id="science-1-right">
+                    <h4>Correct! You earned 100 points</h4>
+                </div>
+                <div class="wrong" id="science-1-wrong">
+                    <h4>Wrong! You lose 100 points</h4>
+                </div>
+            </div>
+            <div class="box" id="science-box-2">
+                <div class="form" id="science-form-2">
+                    <form>
+                        <label>
+                            <h4 id="sci-q-2">Question</h4>
+                        </label>
+                        <input type="radio" name="sci-a-2" value="sci-2-0">
+                            <p class="a" id="sci-2-0">Answer 1</p>
+                        <br>
+                        <input type="radio" name="sci-a-2" value="sci-2-1">
+                            <p class="a" id="sci-2-1">Answer 2</p>
+                        <br>
+                        <input type="radio" name="sci-a-2" value="sci-2-2">
+                            <p class="a" id="sci-2-2">Answer 3</p>
+                        <br>
+                        <input type="radio" name="sci-a-2" value="sci-2-3">
+                            <p class="a" id="sci-2-3">Answer 4</p>
+                        <br>
+                        <input type="submit" class="btn submit" value="Submit Answer">
+                    </form>
+                </div>
+                <div class="points" id="science-points-2">
+                    <h4>200</h4>
+                </div>
+                <div class="right" id="science-2-right">
+                    <h4>Correct! You earned 200 points</h4>
+                </div>
+                <div class="wrong" id="science-2-wrong">
+                    <h4>Wrong! You lose 200 points</h4>
+                </div>
+            </div>
+            <div class="box" id="science-box-3">
+                <div class="form" id="science-form-3">
+                    <form>
+                        <label>
+                            <h4 id="sci-q-3">Question</h4>
+                        </label>
+                        <input type="radio" name="sci-a-3" value="sci-3-0">
+                            <p class="a" id="sci-3-0">Answer 1</p>
+                        <br>
+                        <input type="radio" name="sci-a-3" value="sci-3-1">
+                            <p class="a" id="sci-3-1">Answer 2</p>
+                        <br>
+                        <input type="radio" name="sci-a-3" value="sci-3-2">
+                            <p class="a" id="sci-3-2">Answer 3</p>
+                        <br>
+                        <input type="radio" name="sci-a-3" value="sci-3-3">
+                            <p class="a" id="sci-3-3">Answer 4</p>
+                        <br>
+                        <input type="submit" class="btn submit" value="Submit Answer">
+                    </form>
+                </div>
+                <div class="points" id="science-points-3">
+                    <h4>300</h4>
+                </div>
+                <div class="right" id="science-3-right">
+                    <h4>Correct! You earned 300 points</h4>
+                </div>
+                <div class="wrong" id="science-3-wrong">
+                    <h4>Wrong! You lose 300 points</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        $(document).ready(function(){
+            var score = 0;
+            var isQuestionOpen = false;
+            $.get("https://opentdb.com/api.php?amount=3&category=10&type=multiple", displayQuestions1)
+            function displayQuestions1(booksData){
+                $("#books-points-1").click(function(){
+                    if(isQuestionOpen == false){
+                        isQuestionOpen = true;
+                        var bks_q_1 = booksData.results[0].question;
+                        let answers = booksData.results[0].incorrect_answers;
+                        let rand = Math.floor(Math.random() * 4);
+                        answers.splice(rand, 0, booksData.results[0].correct_answer);
+                        for(let i=0; i<4; i++){
+                            document.getElementById(`bks-1-${i}`).innerHTML = answers[i];
+                        }
+                        document.getElementById('bks-q-1').innerHTML = bks_q_1;
+                        $("#books-form-1").submit(function(e){
+                            e.preventDefault();
+                            var selected_answer = $("input[name='bks-a-1']:checked").val();
+                            if(selected_answer === `bks-1-${rand}`){
+                                score += 100;
+                                $("#books-form-1").css("display", "none");
+                                $("#books-1-right").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            } else {
+                                score -= 100;
+                                $("#books-form-1").css("display", "none");
+                                $("#books-1-wrong").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            }
+                        })
+                        $("#books-points-1").css("display", "none");
+                        $("#books-form-1").css("display", "inline-block");
+                    }
+                })
+                $("#books-points-2").click(function(){
+                    if(isQuestionOpen == false){
+                        isQuestionOpen = true;
+                        var bks_q_2 = booksData.results[1].question;
+                        let answers = booksData.results[1].incorrect_answers;
+                        let rand = Math.floor(Math.random() * 4);
+                        answers.splice(rand, 0, booksData.results[1].correct_answer);
+                        for(let i=0; i<4; i++){
+                            document.getElementById(`bks-2-${i}`).innerHTML = answers[i];
+                        }
+                        document.getElementById('bks-q-2').innerHTML = bks_q_2;
+                        $("#books-form-2").submit(function(e){
+                            e.preventDefault();
+                            var selected_answer = $("input[name='bks-a-2']:checked").val();
+                            if(selected_answer === `bks-2-${rand}`){
+                                score += 200;
+                                $("#books-form-2").css("display", "none");
+                                $("#books-2-right").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            } else {
+                                score -= 200;
+                                $("#books-form-2").css("display", "none");
+                                $("#books-2-wrong").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            }
+                        })
+                        $("#books-points-2").css("display", "none");
+                        $("#books-form-2").css("display", "inline-block");
+                    }
+                })
+                $("#books-points-3").click(function(){
+                    if(isQuestionOpen == false){
+                        isQuestionOpen = true;
+                        var bks_q_3 = booksData.results[2].question;
+                        let answers = booksData.results[2].incorrect_answers;
+                        let rand = Math.floor(Math.random() * 4);
+                        answers.splice(rand, 0, booksData.results[2].correct_answer);
+                        for(let i=0; i<4; i++){
+                            document.getElementById(`bks-3-${i}`).innerHTML = answers[i];
+                        }
+                        document.getElementById('bks-q-3').innerHTML = bks_q_3;
+                        $("#books-form-3").submit(function(e){
+                            e.preventDefault();
+                            var selected_answer = $("input[name='bks-a-3']:checked").val();
+                            if(selected_answer === `bks-3-${rand}`){
+                                score += 300;
+                                $("#books-form-3").css("display", "none");
+                                $("#books-3-right").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            } else {
+                                score -= 300;
+                                $("#books-form-3").css("display", "none");
+                                $("#books-3-wrong").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            }
+                        })
+                        $("#books-points-3").css("display", "none");
+                        $("#books-form-3").css("display", "inline-block");
+                    }
+                })
+            }
+            $.get("https://opentdb.com/api.php?amount=3&category=12&type=multiple", displayQuestions2)
+            function displayQuestions2(musicData){
+                $("#music-points-1").click(function(){
+                    if(isQuestionOpen == false){
+                        isQuestionOpen = true;
+                        var mus_q_1 = musicData.results[0].question;
+                        let answers = musicData.results[0].incorrect_answers;
+                        let rand = Math.floor(Math.random() * 4);
+                        answers.splice(rand, 0, musicData.results[0].correct_answer);
+                        for(let i=0; i<4; i++){
+                            document.getElementById(`mus-1-${i}`).innerHTML = answers[i];
+                        }
+                        document.getElementById('mus-q-1').innerHTML = mus_q_1;
+                        $("#music-form-1").submit(function(e){
+                            e.preventDefault();
+                            var selected_answer = $("input[name='mus-a-1']:checked").val();
+                            if(selected_answer === `mus-1-${rand}`){
+                                score += 100;
+                                $("#music-form-1").css("display", "none");
+                                $("#music-1-right").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            } else {
+                                score -= 100;
+                                $("#music-form-1").css("display", "none");
+                                $("#music-1-wrong").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            }
+                        })
+                        $("#music-points-1").css("display", "none");
+                        $("#music-form-1").css("display", "inline-block");
+                    }
+                })
+                $("#music-points-2").click(function(){
+                    if(isQuestionOpen == false){
+                        isQuestionOpen = true;
+                        var mus_q_2 = musicData.results[1].question;
+                        let answers = musicData.results[1].incorrect_answers;
+                        let rand = Math.floor(Math.random() * 4);
+                        answers.splice(rand, 0, musicData.results[1].correct_answer);
+                        for(let i=0; i<4; i++){
+                            document.getElementById(`mus-2-${i}`).innerHTML = answers[i];
+                        }
+                        document.getElementById('mus-q-2').innerHTML = mus_q_2;
+                        $("#music-form-2").submit(function(e){
+                            e.preventDefault();
+                            var selected_answer = $("input[name='mus-a-2']:checked").val();
+                            if(selected_answer === `mus-2-${rand}`){
+                                score += 200;
+                                $("#music-form-2").css("display", "none");
+                                $("#music-2-right").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            } else {
+                                score -= 200;
+                                $("#music-form-2").css("display", "none");
+                                $("#music-2-wrong").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            }
+                        })
+                        $("#music-points-2").css("display", "none");
+                        $("#music-form-2").css("display", "inline-block");
+                    }
+                })
+                $("#music-points-3").click(function(){
+                    if(isQuestionOpen == false){
+                        isQuestionOpen = true;
+                        var mus_q_3 = musicData.results[2].question;
+                        let answers = musicData.results[2].incorrect_answers;
+                        let rand = Math.floor(Math.random() * 4);
+                        answers.splice(rand, 0, musicData.results[2].correct_answer);
+                        for(let i=0; i<4; i++){
+                            document.getElementById(`mus-3-${i}`).innerHTML = answers[i];
+                        }
+                        document.getElementById('mus-q-3').innerHTML = mus_q_3;
+                        $("#music-form-3").submit(function(e){
+                            e.preventDefault();
+                            var selected_answer = $("input[name='mus-a-3']:checked").val();
+                            if(selected_answer === `mus-3-${rand}`){
+                                score += 300;
+                                $("#music-form-3").css("display", "none");
+                                $("#music-3-right").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            } else {
+                                score -= 300;
+                                $("#music-form-3").css("display", "none");
+                                $("#music-3-wrong").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            }
+                        })
+                        $("#music-points-3").css("display", "none");
+                        $("#music-form-3").css("display", "inline-block");
+                    }
+                })
+            }
+            $.get("https://opentdb.com/api.php?amount=3&category=17&type=multiple", displayQuestions3)
+            function displayQuestions3(scienceData){
+                $("#science-points-1").click(function(){
+                    if(isQuestionOpen == false){
+                        isQuestionOpen = true;
+                        var sci_q_1 = scienceData.results[0].question;
+                        let answers = scienceData.results[0].incorrect_answers;
+                        let rand = Math.floor(Math.random() * 4);
+                        answers.splice(rand, 0, scienceData.results[0].correct_answer);
+                        for(let i=0; i<4; i++){
+                            document.getElementById(`sci-1-${i}`).innerHTML = answers[i];
+                        }
+                        document.getElementById('sci-q-1').innerHTML = sci_q_1;
+                        $("#science-form-1").submit(function(e){
+                            e.preventDefault();
+                            var selected_answer = $("input[name='sci-a-1']:checked").val();
+                            if(selected_answer === `sci-1-${rand}`){
+                                score += 100;
+                                $("#science-form-1").css("display", "none");
+                                $("#science-1-right").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            } else {
+                                score -= 100;
+                                $("#science-form-1").css("display", "none");
+                                $("#science-1-wrong").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            }
+                        })
+                        $("#science-points-1").css("display", "none");
+                        $("#science-form-1").css("display", "inline-block");
+                    }
+                })
+                $("#science-points-2").click(function(){
+                    if(isQuestionOpen == false){
+                        isQuestionOpen = true;
+                        var sci_q_2 = scienceData.results[1].question;
+                        let answers = scienceData.results[1].incorrect_answers;
+                        let rand = Math.floor(Math.random() * 4);
+                        answers.splice(rand, 0, scienceData.results[1].correct_answer);
+                        for(let i=0; i<4; i++){
+                            document.getElementById(`sci-2-${i}`).innerHTML = answers[i];
+                        }
+                        document.getElementById('sci-q-2').innerHTML = sci_q_2;
+                        $("#science-form-2").submit(function(e){
+                            e.preventDefault();
+                            var selected_answer = $("input[name='sci-a-2']:checked").val();
+                            if(selected_answer === `sci-2-${rand}`){
+                                score += 200;
+                                $("#science-form-2").css("display", "none");
+                                $("#science-2-right").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            } else {
+                                score -= 200;
+                                $("#science-form-2").css("display", "none");
+                                $("#science-2-wrong").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            }
+                        })
+                        $("#science-points-2").css("display", "none");
+                        $("#science-form-2").css("display", "inline-block");
+                    }
+                })
+                $("#science-points-3").click(function(){
+                    if(isQuestionOpen == false){
+                        isQuestionOpen = true;
+                        var sci_q_3 = scienceData.results[2].question;
+                        let answers = scienceData.results[2].incorrect_answers;
+                        let rand = Math.floor(Math.random() * 4);
+                        answers.splice(rand, 0, scienceData.results[2].correct_answer);
+                        for(let i=0; i<4; i++){
+                            document.getElementById(`sci-3-${i}`).innerHTML = answers[i];
+                        }
+                        document.getElementById('sci-q-3').innerHTML = sci_q_3;
+                        $("#science-form-3").submit(function(e){
+                            e.preventDefault();
+                            var selected_answer = $("input[name='sci-a-3']:checked").val();
+                            if(selected_answer === `sci-3-${rand}`){
+                                score += 300;
+                                $("#science-form-3").css("display", "none");
+                                $("#science-3-right").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            } else {
+                                score -= 300;
+                                $("#science-form-3").css("display", "none");
+                                $("#science-3-wrong").css("display", "flex");
+                                document.getElementById("score-count").innerHTML = score;
+                                isQuestionOpen = false;
+                            }
+                        })
+                        $("#science-points-3").css("display", "none");
+                        $("#science-form-3").css("display", "inline-block");
+                    }
+                })
+            }
+        })
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    margin: auto 0px;
+    padding: 5px 0px;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.container {
+    width: 30%;
+    height: 750px;
+    border: 1px solid grey;
+    background-color: rgba(178, 190, 197, 0.103);
+    border-radius: 5px;
+}
+.header {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.box {
+    width: 75%;
+    height: 200px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    background-color: rgb(209, 222, 230);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.points {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 145px;
+    margin: 0;
+}
+.btn {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: rgb(83, 82, 82);
+    color: white;
+    margin-bottom: 5px;
+    margin-left: 1.6%;
+    margin-top: 5px;
+    text-decoration: none;
+}
+.top {
+    margin-bottom: 20px;
+}
+#score-count {
+    display: inline;
+}
+.score {
+    width: 5%;
+    margin-left: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 1.6%;
+}
+.bar {
+    display: flex;
+    justify-content: space-between;
+}
+.form {
+    width: 80%;
+    margin-top: 10px;
+    display: none;
+}
+label {
+    text-align: center;
+}
+.a {
+    display: inline;
+    margin-left: 5px;
+}
+input {
+    margin-bottom: 5px;
+}
+.submit {
+    margin-top: 10px;
+}
+.right {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: green;
+}
+.wrong {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: red;
+}
